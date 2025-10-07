@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Config_txt
+  m_EditorClassIdentifier: 
+  m_GroupName: Config_txt
+  m_Data:
+    m_SerializedData: []
+  m_GUID: b41132466c3eb8a4ca2b4c109f9c46bb
+  m_SerializeEntries:
+  - m_GUID: 5042bf42c02bbc440bf6e58b81aa6da8
+    m_Address: Assets/AddressableAssets/Config/CfgAudioClip.txt
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Config
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 5312007a742da134882e52a03fec91f0, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: c793d00a32cc16d44b2e8d51dc45a868, type: 2}
+    - {fileID: 11400000, guid: 77f08ae204e773b4794daabf0b21ca09, type: 2}

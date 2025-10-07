@@ -1,0 +1,5 @@
+id#Annotate#EnumName#Volume#CD#Path
+id#注释#枚举名#音量大小#作为高频音效的CD#路径
+int#string#string#float#float#string
+1#按钮点击#按钮点击#1.0#None#Assets/AddressableAssets/Audio/Sound/按钮点击.mp3
+
