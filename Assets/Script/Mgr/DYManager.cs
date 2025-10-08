@@ -30,7 +30,7 @@ namespace Manager
         private readonly string _apiUrl = "https://analytics.oceanengine.com/api/v2/conversion";
 
         // 分享视频的图片
-        public Sprite shareSp; // 视频截屏的Sprite
+        [HideInInspector]public Sprite shareSp; // 视频截屏的Sprite
         private bool _isRecord; //是否录制视频
         private bool _canShare; //是否能分享视频
         private bool _isCanShowInsert = true;
@@ -49,8 +49,10 @@ namespace Manager
             DontDestroyOnLoad(gameObject);
             Instance = this;
             TT.InitSDK();
+            #if !UNITY_EDITOR
             PreloadRewardVideoAd();
             PreloadInterstitialAd();
+            #endif
             OnAppStart();
 
             /*ReportRewardVideoCount = TT.PlayerPrefs.GetInt("ReportRewardCount", 0);
@@ -101,6 +103,11 @@ namespace Manager
         /// <param name="completeCallback"></param>
         public void OpenRewardVideo(Action completeCallback)
         {
+            #if UNITY_EDITOR
+            completeCallback?.Invoke();
+            return;
+            #endif
+            
             if (_mRewardAd == null)
             {
                 Debug.Log("激励视频广告未准备好");
@@ -133,6 +140,9 @@ namespace Manager
         /// </summary>
         public void OpenInsert()
         {
+            #if UNITY_EDITOR
+            return;
+            #endif
             if (!_isCanShowInsert || Time.time < 30)
             {
                 if (!_isCanShowInsert)

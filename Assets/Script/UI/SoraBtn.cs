@@ -11,7 +11,7 @@ namespace Script.UI
         [FieldName("按钮引用")]
         private Button _button;
 
-        private void Start()
+        private void Awake()
         {
             _button = GetComponent<Button>();
         }

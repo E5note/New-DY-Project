@@ -8,7 +8,7 @@ public class DefaultDef
     public static float Float = 5.7895145f;
     public static double Double = 4.8965711589654;
     public static string String = "E5战未来";
-    public static string Key = "加密密钥,你就是猜不到";
+    public static string Key = "加密密钥";
 
     public static Color Color = new Color(0.558424f, 0.61551f, 0.416645f, 0.6821542f);
     public static Color32 Color32 = new Color(138, 254, 69, 12);
